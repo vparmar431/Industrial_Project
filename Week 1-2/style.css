@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --links-color:#f14d54;
+    --search-bar-color:rgb(33,33,33);
+    --search-btn-color:#80BF32;
+    --cancel-btn-color:#f14d54;
+    --search-header:#f4f4f4;
+    --heading-color:#414141;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 92px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav{
+    padding: 20px;
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul .links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+nav ul .links a{
+    text-decoration: none;
+    padding: 10px;
+    color:var(--links-color);
+    font-size: 14px;
+    font-family: roboto;
+}
+.cartbtn{
+    width: 100.88px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: unset;
+    cursor: pointer;
+    color: rgb(65,65,65);
+}
+.search-header{
+    height: 82px;
+    width: 100%;
+    background-color: var(--search-header);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.search-header input[type = "search"]{
+    width: 422px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid rgb(158, 156, 156);
+    border-radius: 5px;
+    outline: none;
+    margin: 20px;
+}
+.search-header input[type = "search"]::placeholder{
+    font-style: italic;
+   color:var(--search-bar-color);
+}
+.searchbtn{
+    height: 40px;
+    font-size: 16px;
+    width: 129px;
+    background-color: var(--search-btn-color);
+    border: none;
+    outline: none;
+    color:white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.cancelbtn{
+    height: 40px;
+    font-size: 16px;
+    width: 129px;
+    background-color: var(--cancel-btn-color);
+    border: none;
+    outline: none;
+    color:white;
+    border-radius: 5px;
+}
+.input-box{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid rgb(158, 156, 156);
+    border-radius: 5px;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    font-size: 32px;
+    font-family: Roboto;
+    color:var(--heading-color);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sub-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sub-main .information{
+    width: 40%;
+   
+}
+.sub-main .form{
+    width: 40%;
+}
+footer{
+    margin-top: 80px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--search-header);
+}
+.register-form{
+    width: 80%;
+    
+}
+.formgroup{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.product-search{
+    margin-top: 45px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+    width: 80%;
+}
+table{
+    width: 80%;
+    border-spacing: 0px;
+    
+}
+th,td{
+    padding: 20px;
+    border-bottom: 1px solid #414141;
+    border-collapse: collapse;
+}
+thead{
+    font-size: 14px;
+    columns: #212121;
+    border-bottom: 1px solid #414141;
+}
+tbody tr{
+    text-align: center;
+    height: 64px;
+}
+.editoutlinebtn{
+    width: 80px;
+    height: 30px;
+    border: 1px solid #80BF32;
+    color: #80BF32;
+    font-size: 15px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+.deleteoutlinebtn{
+    width: 80px;
+    height: 30px;
+    border: 1px solid #f14d54;
+    color: #f14d54;
+    font-size: 15px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+.showproduct{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card{
+    width: 227.67px;
+    height:305.67;
+    padding: 10px;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    margin: 20px;
+}
+.card .cimg{
+    width: 100%;
+    height: 200px;
+}
+.card .cimg img{
+    width: 100%;
+    height: 100%;
+}
+.card .ctitle{
+    font-size: 1.5em;
+    /* padding: 5px; */
+    margin: 5px;
+}
+.card .cstitle{
+    /* padding: 5px; */
+    margin: 5px;
+    font-size: 15px;
+    color: #414141;
+}
+.card .cdes{
+    margin: 5px;
+    height: 100px;
+    color: #414141;
+    font-size: 18px;
+}
+.card .cdiscount{
+    color: #414141;
+}
+.card .cdiscount span{
+    color: #80BF32;
+    margin-left: 10px;
+}
+.card button{
+    cursor: pointer;
+    width: 207.67px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f14d54;
+    color:white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.showitem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.itemcard{
+    display: flex;
+    width: 585.2px;
+    height: 149.2px;
+    border-radius: 1px;
+    background-color: #E6E6E6;
+    padding: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.icinfo{
+    width: 250px;
+}
+.icimg{
+    height: 117.2px;
+    width: 150px;
+}
+.icimg img{
+    width: 100%;
+    height: 100%;
+}
+.icountbtn{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: var(--cancel-btn-color);
+    color: white;
+    border-radius: 5px;
+    margin:10px ;
+    cursor: pointer;
+}
+.icountnumber{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 0.5px solid black;
+    pointer-events: none;
+}
+.icdiscount{
+
+}
